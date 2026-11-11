@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,161 +10,248 @@
 html{scroll-behavior:smooth}
 body{font-family:Arial,Helvetica,sans-serif;background:#080808;color:#fff;min-height:100vh;overflow-x:hidden}
 body:before{content:"";position:fixed;inset:0;background:radial-gradient(circle at 50% 0%,rgba(255,255,255,.08),transparent 35%),radial-gradient(circle at 10% 80%,rgba(120,120,120,.05),transparent 30%),radial-gradient(circle at 90% 70%,rgba(120,120,120,.05),transparent 30%);pointer-events:none;z-index:-1}
+
 nav{width:100%;padding:22px 7%;display:flex;justify-content:space-between;align-items:center;position:fixed;top:0;z-index:100;background:rgba(8,8,8,.75);backdrop-filter:blur(15px);border-bottom:1px solid rgba(255,255,255,.07)}
-.logo{font-size:24px;font-weight:900;letter-spacing:2px}.logo span{
-        background:linear-gradient(90deg,#ff1744,#ff8a00,#ffe600,#00e676,#00d9ff,#536dfe,#d500f9,#ff1744);
-        background-size:500% 100%;
-        -webkit-background-clip:text;
-        background-clip:text;
-        color:transparent;
-        animation:rainbowText 3s linear infinite;
-    }
-nav a{color:#aaa;text-decoration:none;margin-left:28px;font-size:14px;transition:.25s}nav a:hover{color:#fff}
+.logo{font-size:24px;font-weight:900;letter-spacing:2px}
+.logo span{background:linear-gradient(90deg,#ff1744,#ff8a00,#ffe600,#00e676,#00d9ff,#536dfe,#d500f9,#ff1744);background-size:500% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:rainbowText 3s linear infinite}
+nav a{color:#aaa;text-decoration:none;margin-left:28px;font-size:14px;transition:.25s}
+nav a:hover{color:#fff}
+
 .hero{min-height:100vh;display:flex;justify-content:center;align-items:center;text-align:center;padding:120px 20px 80px}
-.hero-content{max-width:850px}.badge{display:inline-block;padding:8px 16px;border:1px solid #333;border-radius:50px;color:#aaa;font-size:12px;letter-spacing:2px;margin-bottom:25px;background:rgba(255,255,255,.03)}
-h1{font-size:clamp(60px,12vw,130px);font-weight:900;letter-spacing:-6px;line-height:.9;margin-bottom:25px}h1 span, .section-title h2, .module h3{
-        background:linear-gradient(90deg,#ff004c,#ff7a00,#ffe600,#00ff66,#00d9ff,#7a5cff,#ff00d4,#ff004c);
-        background-size:300% 100%;
-        -webkit-background-clip:text;
-        background-clip:text;
-        color:transparent;
-        animation:rainbow 5s linear infinite;
-    }
-    @keyframes rainbowText{
-        0%{background-position:0% 50%}
-        100%{background-position:500% 50%}
-    }
-    @keyframes rainbow{
-        0%{background-position:0% 50%}
-        100%{background-position:300% 50%}
-    }
+.hero-content{max-width:850px}
+.badge{display:inline-block;padding:8px 16px;border:1px solid #333;border-radius:50px;color:#aaa;font-size:12px;letter-spacing:2px;margin-bottom:25px;background:rgba(255,255,255,.03)}
+h1{font-size:clamp(60px,12vw,130px);font-weight:900;letter-spacing:-6px;line-height:.9;margin-bottom:25px}
+h1 span,.section-title h2,.module h3{background:linear-gradient(90deg,#ff004c,#ff7a00,#ffe600,#00ff66,#00d9ff,#7a5cff,#ff00d4,#ff004c);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:rainbow 5s linear infinite}
+
+@keyframes rainbowText{0%{background-position:0% 50%}100%{background-position:500% 50%}}
+@keyframes rainbow{0%{background-position:0% 50%}100%{background-position:300% 50%}}
+
 .hero p{color:#999;font-size:18px;line-height:1.7;max-width:650px;margin:auto}
 .buttons{margin-top:35px;display:flex;justify-content:center;gap:15px;flex-wrap:wrap}
 .btn{padding:14px 25px;border-radius:10px;text-decoration:none;font-weight:bold;transition:.25s;display:inline-block}
-.btn-primary{background:#fff;color:#000}.btn-primary:hover{transform:translateY(-3px);box-shadow:0 10px 35px rgba(255,255,255,.12)}
-.btn-secondary{border:1px solid #333;color:#fff;background:#101010}.btn-secondary:hover{background:#181818;transform:translateY(-3px)}
-section{padding:100px 7%;max-width:1200px;margin:auto}.section-title{text-align:center;margin-bottom:55px}.section-title h2{
-        font-size:42px;
-        margin-bottom:12px;
-        background:linear-gradient(90deg,#ff1744,#ff8a00,#ffe600,#00e676,#00d9ff,#536dfe,#d500f9,#ff1744);
-        background-size:500% 100%;
-        -webkit-background-clip:text;
-        background-clip:text;
-        color:transparent;
-        animation:rainbowText 3s linear infinite;
-    }.section-title p{color:#777}
-.about-card{background:linear-gradient(145deg,#111,#0b0b0b);border:1px solid #222;border-radius:20px;padding:40px;text-align:center}.about-card p{color:#999;line-height:1.8;max-width:750px;margin:auto}
-.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.plan{position:relative;background:linear-gradient(145deg,#121212,#0b0b0b);border:1px solid #242424;border-radius:20px;padding:35px;transition:.3s;overflow:hidden}.plan:before{content:"";position:absolute;width:150px;height:150px;background:rgba(255,255,255,.04);border-radius:50%;top:-70px;right:-70px}.plan:hover{transform:translateY(-8px);border-color:#444}.plan h3{font-size:22px;margin-bottom:20px}.price{font-size:42px;font-weight:900}.price small{color:#666;font-size:14px;font-weight:normal}
-.payments{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.payment{padding:30px;border:1px solid #222;border-radius:18px;background:#101010;text-align:center;font-size:17px;transition:.25s}.payment:hover{background:#151515;transform:translateY(-4px)}
+.btn-primary{background:#fff;color:#000}
+.btn-secondary{border:1px solid #333;color:#fff;background:#101010}
+
+section{padding:100px 7%;max-width:1200px;margin:auto}
+.section-title{text-align:center;margin-bottom:55px}
+.section-title h2{font-size:42px;margin-bottom:12px}
+.section-title p{color:#777}
+.about-card{background:linear-gradient(145deg,#111,#0b0b0b);border:1px solid #222;border-radius:20px;padding:40px;text-align:center}
+.about-card p{color:#999;line-height:1.8;max-width:750px;margin:auto}
+
+.plans,.payments,.modules{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.plan{background:linear-gradient(145deg,#121212,#0b0b0b);border:1px solid #242424;border-radius:20px;padding:35px}
+.plan h3{font-size:22px;margin-bottom:20px}
+.price{font-size:42px;font-weight:900}
+.price small{color:#666;font-size:14px;font-weight:normal}
+.payment{padding:30px;border:1px solid #222;border-radius:18px;background:#101010;text-align:center;font-size:17px}
 .warning{margin-top:25px;padding:18px;border-radius:12px;background:#111;border:1px solid #252525;color:#777;text-align:center;font-size:13px}
-.community{text-align:center;padding-bottom:120px}.community p{color:#888;margin-bottom:30px}
-footer{border-top:1px solid #1d1d1d;padding:30px 7%;text-align:center;color:#555;font-size:13px}
-.modules{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+
 .module{border:1px solid #252525;border-radius:18px;background:linear-gradient(145deg,#121212,#0b0b0b);padding:28px;text-align:center;transition:.25s}
 .module:hover{transform:translateY(-5px);border-color:#444}
 .module h3{margin-bottom:18px;font-size:22px}
 .module button{width:100%;border:0;border-radius:10px;padding:13px 18px;background:#fff;color:#000;font-weight:800;font-size:15px;cursor:pointer;transition:.2s}
 .module button:hover{transform:scale(1.03)}
-.module-content{display:none;margin-top:18px;padding:15px;border-radius:10px;background:#0a0a0a;border:1px solid #222;color:#aaa;line-height:1.6}
+.module-content{display:none;margin-top:18px;padding:18px;border-radius:10px;background:#0a0a0a;border:1px solid #222;color:#aaa;line-height:1.6}
+.module-content h2{color:#fff;font-size:22px;margin-bottom:8px}
 .module.active .module-content{display:block}
 .module.active button{background:#222;color:#fff;border:1px solid #444}
-@media(max-width:800px){nav{padding:18px 5%}nav .links{display:none}.plans,.payments{grid-template-columns:1fr}section{padding:75px 5%}h1{letter-spacing:-3px}}
+
+.community{text-align:center;padding-bottom:120px}
+.community p{color:#888;margin-bottom:30px}
+footer{border-top:1px solid #1d1d1d;padding:30px 7%;text-align:center;color:#555;font-size:13px}
+
+@media(max-width:800px){
+nav{padding:18px 5%}
+nav .links{display:none}
+.plans,.payments,.modules{grid-template-columns:1fr}
+section{padding:75px 5%}
+h1{letter-spacing:-3px}
+}
 </style>
 </head>
+
 <body>
-<nav><div class="logo">RIR<span>GEAR</span></div><div class="links"><a href="#about">About</a><a href="#plans">Prices</a><a href="#payment">Payment</a><a href="#community">Community</a></div></nav>
-<header class="hero"><div class="hero-content"><div class="badge">OFFICIAL WEBSITE</div><h1>RIR<span>GEAR</span></h1><p>Welcome to the official RirGear website. Find our community links, plans and information about our services all in one place.</p><div class="buttons"><a class="btn btn-primary" href="https://discord.gg/gRsgcbqPe" target="_blank">Join Discord</a><a class="btn btn-secondary" href="https://t.me/CheatsForBs4" target="_blank">Join Telegram</a></div></div></header>
-<section id="about"><div class="section-title"><h2>Welcome to RirGear</h2><p>Everything you need to know.</p></div><div class="about-card"><p>Welcome to the official RirGear website! Here you can find our community links and information about our services.<br><br>Our Telegram bot is currently in development. More information will be shared in our Telegram channel when it is ready.</p></div></section>
-<section id="prices"><div class="section-title"><h2>Prices</h2><p>Choose the price that fits you.</p></div><div class="plans"><div class="plan"><h3>1 Month</h3><div class="price">5€ <small>/ month</small></div></div><div class="plan"><h3>3 Months</h3><div class="price">8€ <small>/ 3 months</small></div></div><div class="plan"><h3>6 Months</h3><div class="price">15€ <small>/ 6 months</small></div></div></div></section>
+
+<nav>
+<div class="logo">RIR<span>GEAR</span></div>
+<div class="links">
+<a href="#about">About</a>
+<a href="#prices">Prices</a>
+<a href="#payment">Payment</a>
+<a href="#community">Community</a>
+</div>
+</nav>
+
+<header class="hero">
+<div class="hero-content">
+<div class="badge">OFFICIAL WEBSITE</div>
+<h1>RIR<span>GEAR</span></h1>
+<p>Welcome to the official RirGear website. Find our community links, plans and information about our services all in one place.</p>
+<div class="buttons">
+<a class="btn btn-primary" href="https://discord.gg/gRsgcbqPe" target="_blank">Join Discord</a>
+<a class="btn btn-secondary" href="https://t.me/CheatsForBs4" target="_blank">Join Telegram</a>
+</div>
+</div>
+</header>
+
+<section id="about">
+<div class="section-title">
+<h2>Welcome to RirGear</h2>
+<p>Everything you need to know.</p>
+</div>
+<div class="about-card">
+<p>Welcome to the official RirGear website! Here you can find our community links and information about our services.<br><br>Our Telegram bot is currently in development. More information will be shared in our Telegram channel when it is ready.</p>
+</div>
+</section>
+
+<section id="prices">
+<div class="section-title">
+<h2>Prices</h2>
+<p>Choose the price that fits you.</p>
+</div>
+<div class="plans">
+<div class="plan"><h3>1 Month</h3><div class="price">5€ <small>/ month</small></div></div>
+<div class="plan"><h3>3 Months</h3><div class="price">8€ <small>/ 3 months</small></div></div>
+<div class="plan"><h3>6 Months</h3><div class="price">15€ <small>/ 6 months</small></div></div>
+</div>
+</section>
 
 <section id="modules">
-    <div class="section-title">
-        <h2>RirGear+</h2>
-        <p>Choose a feature to view more information.</p>
-    </div>
+<div class="section-title">
+<h2>RirGear+</h2>
+<p>Choose a feature to view more information.</p>
+</div>
 
-    <div class="modules">
-        <div class="module">
-            <h3>Aimbot</h3>
-            <button onclick="toggleModule(this)">Aimbot</button>
-            <div class="module-content">RirGear+<br>More information coming soon.</div>
-        </div>
+<div class="modules">
 
-        <div class="module">
-            <h3>Autododge</h3>
-            <button onclick="toggleModule(this)">Autododge</button>
-            <div class="module-content">RirGear+<br>More information coming soon.</div>
-        </div>
+<div class="module">
+<h3>Aimbot</h3>
+<button onclick="toggleModule(this)">Aimbot</button>
+<div class="module-content">
+<h2>RirGear+</h2>
+<p>More information coming soon.</p>
+</div>
+</div>
 
-        <div class="module">
-            <h3>Xray</h3>
-            <button onclick="toggleModule(this)">Xray</button>
-            <div class="module-content">RirGear+<br>More information coming soon.</div>
-        </div>
+<div class="module">
+<h3>Autododge</h3>
+<button onclick="toggleModule(this)">Autododge</button>
+<div class="module-content">
+<h2>RirGear+</h2>
+<p>More information coming soon.</p>
+</div>
+</div>
 
-        <div class="module">
-            <h3>ESP</h3>
-            <button onclick="toggleModule(this)">ESP</button>
-            <div class="module-content">RirGear+<br>More information coming soon.</div>
-        </div>
+<div class="module">
+<h3>Xray</h3>
+<button onclick="toggleModule(this)">Xray</button>
+<div class="module-content">
+<h2>RirGear+</h2>
+<p>More information coming soon.</p>
+</div>
+</div>
 
-        <div class="module">
-            <h3>Autofarm</h3>
-            <button onclick="toggleModule(this)">Autofarm</button>
-            <div class="module-content">RirGear+<br>More information coming soon.</div>
-        </div>
+<div class="module">
+<h3>ESP</h3>
+<button onclick="toggleModule(this)">ESP</button>
+<div class="module-content">
+<h2>RirGear+</h2>
+<p>More information coming soon.</p>
+</div>
+</div>
 
-        <div class="module">
-            <h3>Killaura</h3>
-            <button onclick="toggleModule(this)">Killaura</button>
-            <div class="module-content">RirGear+<br>More information coming soon.</div>
-        </div>
+<div class="module">
+<h3>Autofarm</h3>
+<button onclick="toggleModule(this)">Autofarm</button>
+<div class="module-content">
+<h2>RirGear+</h2>
+<p>More information coming soon.</p>
+</div>
+</div>
 
-        <div class="module">
-            <h3>AutoAttack</h3>
-            <button onclick="toggleModule(this)">AutoAttack</button>
-            <div class="module-content">RirGear+<br>More information coming soon.</div>
-        </div>
+<div class="module">
+<h3>Killaura</h3>
+<button onclick="toggleModule(this)">Killaura</button>
+<div class="module-content">
+<h2>RirGear+</h2>
+<p>More information coming soon.</p>
+</div>
+</div>
 
-        <div class="module">
-            <h3>AutoUlti</h3>
-            <button onclick="toggleModule(this)">AutoUlti</button>
-            <div class="module-content">RirGear+<br>More information coming soon.</div>
-        </div>
+<div class="module">
+<h3>AutoAttack</h3>
+<button onclick="toggleModule(this)">AutoAttack</button>
+<div class="module-content">
+<h2>RirGear+</h2>
+<p>More information coming soon.</p>
+</div>
+</div>
 
-        <div class="module">
-            <h3>AutoCharge</h3>
-            <button onclick="toggleModule(this)">AutoCharge</button>
-            <div class="module-content">RirGear+<br>More information coming soon.</div>
-        </div>
+<div class="module">
+<h3>AutoUlti</h3>
+<button onclick="toggleModule(this)">AutoUlti</button>
+<div class="module-content">
+<h2>RirGear+</h2>
+<p>More information coming soon.</p>
+</div>
+</div>
 
-    </div>
+<div class="module">
+<h3>AutoCharge</h3>
+<button onclick="toggleModule(this)">AutoCharge</button>
+<div class="module-content">
+<h2>RirGear+</h2>
+<p>More information coming soon.</p>
+</div>
+</div>
+
+</div>
 </section>
-
 
 <section id="nulls-brawl">
-    <div class="section-title">
-        <h2>Nulls Brawl</h2>
-        <p>RirGear+ features for Nulls Brawl.</p>
-    </div>
-
-    <div class="about-card">
-        <h3 style="font-size:26px;margin-bottom:15px;">RirGear+ for Nulls Brawl</h3>
-        <p>
-            Explore the RirGear+ Nulls Brawl section.
-            More information and features will be added soon.
-        </p>
-    </div>
+<div class="section-title">
+<h2>Nulls Brawl</h2>
+<p>RirGear+ features for Nulls Brawl.</p>
+</div>
+<div class="about-card">
+<h3 style="font-size:26px;margin-bottom:15px;">RirGear+ for Nulls Brawl</h3>
+<p>Explore the RirGear+ Nulls Brawl section. More information and features will be added soon.</p>
+</div>
 </section>
 
-<section id="payment"><div class="section-title"><h2>Payment</h2><p>Available payment methods.</p></div><div class="payments"><div class="payment">⭐ Telegram Stars</div><div class="payment">🍎 Apple Gift Cards</div><div class="payment">🎮 Google Play Gift Cards</div></div><div class="warning">⚠️ Be careful with gift-card payments: never share a gift-card code publicly.</div></section>
-<section id="community" class="community"><div class="section-title"><h2>Join Our Community</h2><p>Stay updated and connect with RirGear.</p></div><div class="buttons"><a class="btn btn-primary" href="https://discord.gg/gRsgcbqPe" target="_blank">Discord</a><a class="btn btn-secondary" href="https://t.me/CheatsForBs4" target="_blank">Telegram</a></div></section>
+<section id="payment">
+<div class="section-title">
+<h2>Payment</h2>
+<p>Available payment methods.</p>
+</div>
+<div class="payments">
+<div class="payment">⭐ Telegram Stars</div>
+<div class="payment">🍎 Apple Gift Cards</div>
+<div class="payment">🎮 Google Play Gift Cards</div>
+</div>
+<div class="warning">⚠️ Be careful with gift-card payments: never share a gift-card code publicly.</div>
+</section>
+
+<section id="community" class="community">
+<div class="section-title">
+<h2>Join Our Community</h2>
+<p>Stay updated and connect with RirGear.</p>
+</div>
+<div class="buttons">
+<a class="btn btn-primary" href="https://discord.gg/gRsgcbqPe" target="_blank">Discord</a>
+<a class="btn btn-secondary" href="https://t.me/CheatsForBs4" target="_blank">Telegram</a>
+</div>
+</section>
+
 <footer>© 2026 RirGear. All rights reserved.</footer>
+
 <script>
 function toggleModule(button){
-    const module = button.parentElement;
-    module.classList.toggle("active");
+const module = button.parentElement;
+module.classList.toggle("active");
 }
 </script>
+
 </body>
 </html>
